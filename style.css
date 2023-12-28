@@ -1,0 +1,192 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    height: 300px;
+}
+#logo{
+    display: flex;
+    font-size: larger;
+}
+#lg1{
+    color: rgb(126, 139, 4);
+}
+#lg2{
+    color: #1b0349;
+}
+nav ul{
+    background-color: #f0ae78;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    width: auto;
+    padding-right: 2%;
+    position: relative;
+    animation-name: navAnima;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+nav ul li{
+    list-style: none;
+    color: antiquewhite;
+    height: 30px;
+    /* align-self: baseline; */
+    padding-top: 2%;
+}
+nav ul li img{
+    width: 100px;
+}
+nav ul li select{
+    color: antiquewhite;
+    background-color: #f0ae78;
+    border: none;
+    /* height: 50px; */
+    animation-name: navAnima;
+    animation-duration: 2s;
+}
+nav ul li:hover{
+    border: 1px solid;
+    border-color: aliceblue;
+    cursor: pointer;
+}
+h1{
+    color: rgb(240, 11, 11);
+}
+header{
+    margin: -200px;
+    margin-left: 5%;
+    padding: 0px;
+    text-align: center;
+    height: 700px;
+    width: 1200px;
+}
+header #searchBar{
+    padding-top: 6px;
+    height: 40px;
+    width: auto;
+    border: 1px solid #fd7e14;
+    border-radius: 40px;
+}
+header #searchBar input{
+    height: 28px;
+    width: 90%;
+    /* margin-left: 0%; */
+    padding-left: 5px;
+    border-radius:40px 0% 0% 40px;
+}
+header #searchBar button{
+    background-color: #fd7e14;
+    color: rgb(232, 241, 243);
+    height: 29px;
+    width: 9%;
+    cursor: pointer;
+    margin-left: -5px;
+    border-radius: 0% 40px 40px 0%;
+}
+#about{
+    margin: 40px;
+    padding: 5px;
+    border-radius: 40px;
+    background-color: rgb(152, 185, 228);
+    position: relative;
+    animation-name: aboutAnima;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+}
+#services{
+    margin: 40px;
+    padding: 5px;
+    border-radius: 40px;
+    background-color: rgb(197, 252, 183);
+    height: 300px;
+    width: 1100px;
+    animation-name: servAnima;
+    animation-duration: 4s;
+}
+#exservices{
+    height: 150px;
+    /* width: fit-content; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between
+}
+#exservices div{
+    height: 100%;
+    width: 250px; 
+    background-color: #f0ae78;
+    border-radius: 20px;
+}
+
+#clients{
+    margin: 50px;
+    background-color: rgb(162, 180, 82);
+    display: flex;
+    justify-content: space-between;
+    animation-name: clientAnima;
+    animation-duration: 4s;
+}
+#clients img{
+    height: 100px;
+}
+@keyframes aboutAnima{
+    0%   {background-color:rgb(177, 113, 113);   transform: rotateY(0deg);}
+    50%  {background-color:rgb(66, 202, 89);   transform: rotateY(360deg);}
+    /* 50%{background-color:rgb(83, 165, 97);  transform: rotateY(270deg);} */
+    /* 75%{background-color:green;  transform: rotateY(270deg);} */
+    100% {background-color:rgb(152, 185, 228); transform: rotateY(0deg);}
+}
+@keyframes servAnima{
+    from {background-color: rgb(153, 161, 238);}
+    to {background-color: rgb(197, 252, 183);}
+}
+@keyframes clientAnima{
+    from {background-color: rgb(103, 171, 180);}
+    to {background-color: rgb(162, 180, 82);}
+}
+@keyframes navAnima{
+    0%   {background-color:red;  left:0px;}
+    25%  {background-color:yellow;  left:150px;}
+    50%  {background-color:blue;  left:300px;}
+    75%  {background-color:green;  left:100px;}
+    100% {background-color:#f0ae78; left:0px;}
+}
+footer{
+    margin-top: 20%;
+    padding-top: 5%;
+    color: #978369;
+    background-color:#646363;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul{
+    padding-left: 3%;
+    background-color: #646363;
+    color: #978369;
+}
+footer ul li select{
+    color: #978369;
+    background-color:#646363;
+    border: none;
+    /* height: 50px; */
+}
+footer ul li img{
+    width: 200px;
+}
+footer ul li{
+    list-style: none;
+    /* height: 30px; */
+    /* align-self: baseline; */
+    padding-top: 2%;
+}
+#box2{
+    color: #978369;
+    background-color:#646363;
+    height: 60%;
+    width: 500px;
+}
